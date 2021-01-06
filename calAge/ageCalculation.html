@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Calculation</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script src="action.js">
+	</script>
+</head>
+<body class="bg-primary">
+	<div class="container">
+		<h1 class="text-center">Calculate Your Age</h1>
+	<form class="form" name="myForm" action="#" method="post" onsubmit="return ageCal()" >
+
+		<div class="row">
+			<div class="form-group col-md-4 clo-sm-12">
+				<label>First Name</label>
+				<input class="form-control" type="text" name="fname" id="fn" placeholder="Enter First Name">
+				<span class="text-danger" id="spn1">*</span>
+			</div> 
+
+			<div class="form-group col-md-4 col-sm-12">
+				<label>Last Name</label>
+				<input class="form-control" type="text" name="lname" placeholder="Enter Last Name">
+				<span class="text-danger" id="spn2">*</span>
+			</div>
+
+			<div class="form-group col-md-4 col-sm-12">
+				<label>Date of Birth</label>
+				<input class="form-control" type="Date" name="dob">
+				<span class="text-danger" id="spn3">*</span>
+			</div>
+		</div>	
+		<input class="btn btn-success btn-lg" type="submit" value="SUBMIT">
+	</form><br><br>
+	<div>
+		<h2 class="text-center" id="result"></h2>
+	</div>
+	
+	</div>
+</body>
+</html>
