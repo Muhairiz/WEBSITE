@@ -34,7 +34,7 @@ function ageCal(){
 		document.myForm.dob.focus();
 		return false;
 	}else{
-		document.getElementById('result').innerHTML= "Hello "+document.myForm.fname.value+" "+document.myForm.lname.value+" your Age is <br>"+age+" Years";
+		document.getElementById('result').innerHTML= "Hello "+document.myForm.fname.value+" "+document.myForm.lname.value+" your Age is <br>"+ageY+" Years";
 		//document.getElementById('result').innerHTML= "Hello "+ageD;
 		return false;
 	}
