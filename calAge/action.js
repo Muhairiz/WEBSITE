@@ -33,9 +33,11 @@ function ageCal(){
 		document.getElementById('spn3').innerHTML= "Please enter your Date of birth";
 		document.myForm.dob.focus();
 		return false;
+	}else if(ageY > 20){
+		document.getElementById('result').innerHTML= "Hello "+document.myForm.fname.value+" "+document.myForm.lname.value+" your Age is <br>"+ageY+" Years recomended to get marry if not yet";
+		return false;
 	}else{
-		document.getElementById('result').innerHTML= "Hello "+document.myForm.fname.value+" "+document.myForm.lname.value+" your Age is <br>"+ageY+" Years";
-		//document.getElementById('result').innerHTML= "Hello "+ageD;
+		document.getElementById('result').innerHTML= "Hello "+document.myForm.fname.value+" "+document.myForm.lname.value+" your Age is <br>"+ageY+" Years ";
 		return false;
 	}
 
